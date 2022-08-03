@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero__section{
+    background: url(images/heroSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    padding: 16px 48px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;   
+}
+
+.navbar__menu_container{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__menu_container .user__icon{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: solid 1px white;
+    display: none;
+}
+
+.hero__section_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: calc(60vh - 60px);
+}
+
+.hero__section_logo{
+    width: 300px;
+    height: auto;
+}
+
+.hero__section_title{
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero__section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.input_container_location,
+.input_container_search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 30px;
+}
+
+.input_container_location{
+    width: 30%;
+    border-right: solid 1px #e0e0e0;
+}
+
+.input_container_search{
+    width: 70%;
+}
+
+.input_container_location_text,
+.input_container_search_text{
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.input_container_location_text,
+.input_container_search_text{
+    width: 95%;
+}
+
+.fa-location-dot{
+    color: rgb(255, 150, 150);
+}
+
+.fa-magnifying-glass{
+    color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar__menu_container .user__icon{
+        display: flex;
+    }
+
+    .link{
+        display: none;
+    }
+
+    .navbar{
+        padding: 16px;
+    }
+
+    .hero__section{
+        min-height: 80vh;
+    }
+}
