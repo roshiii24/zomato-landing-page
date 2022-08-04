@@ -112,8 +112,8 @@
 }
 
 .container{
-    margin: 2.5rem auto;
-    width: 90%;
+    margin: 2.5rem auto 6rem;
+    width: 75%;
 }
 
 .we__offer{
@@ -164,6 +164,7 @@
 
 .collections h1{
     font-weight: 500;
+    font-size: 32px;
 }
 
 .collections .sub__heading_container{
@@ -197,7 +198,7 @@
 
 .collection__card_container .card{
     height: 300px;
-    min-width: 240px;
+    min-width: 260px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -248,6 +249,73 @@
     letter-spacing: 0.5px;
 }
 
+/* .localities{
+    width: 75%;
+} */
+
+.localities h1{
+    font-weight: 300;
+    font-size: 32px;
+    color: rgb(59, 59, 59);
+}
+
+.localities__area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 15px;
+    margin-top: 30px;
+}
+
+.localities__area a{
+    background-color: white;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.localities__area a:hover{
+    transform: scale(1.005);
+    box-shadow: 0px 5px 10px #e0e0e0;
+}
+
+.localities__area button{
+    height: 84px;
+    background-color: white;
+    padding: 10px;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.localities__area_button h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.localities__area_button span{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+    .localities h1{
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .navbar__menu_container .user__icon{
         display: flex;
@@ -287,5 +355,15 @@
         padding: 15px;
         border-radius: 10px;
         width: 95%;
+    }
+
+    .localities__area{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .localities__area{
+        grid-template-columns: 1fr;
     }
 }
