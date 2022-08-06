@@ -112,11 +112,12 @@
 }
 
 .container{
-    margin: 2.5rem auto 6rem;
+    margin: 6rem auto;
     width: 75%;
 }
 
 .we__offer{
+    margin-top: 2.5rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -312,6 +313,7 @@
 
 .localities__area button{
     font-size: 18px;
+    cursor: pointer;
 }
 
 .get__the_app{
@@ -321,6 +323,7 @@
     justify-content: center;
     align-items: center;
     padding: 3rem 6rem;
+    margin-bottom: 0;
 }
 
 .semiContainer{
@@ -434,6 +437,83 @@
     width: 35%;
 }
 
+.explore__options{
+    margin-top: 0;
+    padding: 3rem 15%;
+    background: #f5f5f572;   
+    width: 100%;
+}
+
+.explore__options h1{
+    font-weight: 400;
+    font-size: 32px;
+    color: rgb(59, 59, 59);
+}
+
+.explore__options_dropdown{
+    padding-top: 20px;
+}
+
+.dropdownbtn{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.dropdownbtn button{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.front{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownbtn button .front h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dropdownbtn__content{
+    display: none;
+    padding-top: 25px;
+    color: #9e9e9e;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.dropdownbtn__content a{
+    text-decoration: none;
+    color: #9e9e9e;
+    font-weight: 300;
+}
+
+.dropdownbtn__content_restaurant_chains{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dropdownbtn__content_cities_deliver{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dropdownbtn__content_cities_deliver .cities_see_more{
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1300px) {
     .get__the_app .semiContainer .left,
     .get__the_app .semiContainer .right {
@@ -453,6 +533,10 @@
     .get__the_app .semiContainer {
       width: 90%;
     }
+
+    .dropdownbtn__content_cities_deliver{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -469,6 +553,10 @@
     .get__the_app .semiContainer {
       width: 80%;
       flex-direction: column;
+    }
+
+    .dropdownbtn__content_cities_deliver{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -516,10 +604,23 @@
     .localities__area{
         grid-template-columns: 1fr 1fr;
     }
+
+    .dropdownbtn__content_restaurant_chains{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     .localities__area{
         grid-template-columns: 1fr;
+    }
+
+    .dropdownbtn__content_restaurant_chains{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dropdownbtn__content_cities_deliver{
+        grid-template-columns: 1fr 1fr;
     }
 }
